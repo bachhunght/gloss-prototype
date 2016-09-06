@@ -1,0 +1,354 @@
+body {
+  font-size: 14px;
+  font-family: 'BrandonGrotesqueRegular';
+  padding: 80px 0 0 0;
+  margin: 0;
+
+  &:after {
+    content: "";
+    background-image: url("../images/image-demo/Fade-White.png");
+    position: absolute;
+    z-index: 1;
+    height: 124px;
+    width: 100%;
+    top: 0;
+  }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.block-title {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 27px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: inline;
+  }
+}
+
+.blue-light {
+  color: $blue-light;
+}
+
+.region-content-top-wrapper {
+  background-color: $grey;
+  display: inline-block;
+  width: 100%;
+}
+
+.cl-yellow {
+  color: $yello;
+}
+
+.cl-red {
+ color: $red;
+}
+.cl-grey {
+  color: $grey;
+}
+
+.cl-white {
+  color: $white;
+}
+
+.scrol-bottom {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'BrandonGrotesqueMedium';
+  .text {
+    margin-bottom: 5px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+  }
+
+  a {
+    background-image: url("../images/image-demo/Arrow-copy.png");
+    font-size: 0;
+    width: 34px;
+    height: 19px;
+    color: transparent;
+    display: inline-block;
+  }
+}
+
+.region-content-bottom-wrapper {
+  background-color: #404352;
+  padding-top: 40px;
+  padding-bottom: 40px
+}
+
+/* box-cta-book */
+.box-cta-book {
+  color: $white;
+  font-size: 25px;
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto;
+
+  span {
+    font-size: 30px;
+    font-family: 'BrandonGrotesqueBold';
+  }
+  &__content {
+    margin-bottom: 45px;
+  }
+}
+
+.botton {
+  background-color: $red;
+  border-radius: 50px;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'BrandonGrotesqueBold';
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 20px 70px;
+}
+
+.page-contnt-wrappre {
+  background: $grey;
+  color: $white;
+}
+
+/* style form */
+.box-from-contact {
+  .input {
+    background: transparent;
+    border-color: $gray-6975;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    color: white;
+    font-family: 'BrandonGrotesqueRegular';
+    font-size: 20px;
+    margin-bottom: 13px;
+    padding: 15px 10px 10px 0;
+    width: 100%;
+  }
+
+  input:focus,
+  textarea:focus,
+  keygen:focus,
+  select:focus {
+    outline: 0;
+    border-width: 0 0 1px 0;
+    border-color: $yello;
+  }
+
+  input::-webkit-input-placeholder {
+    color: $white;
+  }
+
+  input:-moz-placeholder { /* Firefox 18- */
+    color: $white;
+  }
+
+  input::-moz-placeholder {  /* Firefox 19+ */
+    color: $white;
+  }
+
+  input:-ms-input-placeholder {
+    color: $white;
+  }
+
+  &__message {
+    margin-bottom: 45px;
+    margin-top: 30px;
+
+    .lable-message {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      background: #30323e;
+      width: 100%;
+      padding: 15px;
+      border: 0;
+      color: $white;
+    }
+  }
+
+  input.botton {
+    border: 0;
+    font-family: 'BrandonGrotesqueBold';
+    text-transform: uppercase;
+    width: 80%;
+    letter-spacing: 7px;
+
+    &:hover {
+      background-color: darken($red, 10%);
+    }
+  }
+}
+ /* Style the list */
+ul.tab {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  float: left;
+  width: 15%;
+  font-size: 16px;
+  font-family: 'BrandonGrotesqueRegular';
+}
+
+/* Float the list items side by side */
+ul.tab li {
+  float: none;
+}
+
+/* Style the links inside the list items */
+ul.tab li a {
+  display: block;
+  color: black;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+  color: $white;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+color: $red;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, ul.tab li a.active {
+
+  color: $red;
+
+}
+
+/* Style the tab content */
+
+.tabcontent {
+  font-family: 'BrandonGrotesqueRegular';
+  display: none;
+  padding: 0 12px 0 30px;
+  border-left: 1px solid #777;
+  width: 80%;
+  float: left;
+}
+
+.tabcontent {
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+
+ > h3 {
+    font-size: 30px;
+    color: $yello;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: normal;
+    line-height: 1;
+  }
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+///
+///
+.content-faq {
+  width: 100%;
+  display: inline-block;
+}
+ /* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+  color: $red;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+  font-size: 20px;
+  background: $grey;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+// button.accordion.active,
+// button.accordion:hover {
+//     background-color: #ddd;
+// }
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 18px;
+    // background-color: white;
+    display: none;
+}
+
+/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
+div.panel.show {
+    display: block;
+}
+
+button.accordion:after {
+    content: '';
+    background: #777;
+    position: absolute;
+    bottom: 22px;
+    height: 1px;
+    width: 100%;
+}
+
+button.accordion.active:after {
+    //content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+div.panel {
+    padding: 0 18px;
+    // background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+
+.tabcontent.active {
+  display: block;
+}
+ul.tab li:first-child a {
+  padding-top: 0;
+}
+
+.icon-circle-down:before {
+  color: #777;
+  margin-right: 5px;
+  margin-top: 6px;
+  font-size: 17px;
+}

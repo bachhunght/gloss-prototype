@@ -1,0 +1,36 @@
+{# components.twig #}
+{% extends "includes/layout.twig" %}
+
+{% block header %}
+  {% include "components/header.twig" %}
+{% endblock %}
+{% block feature_banner %}
+  {% include "components/feature-banner.twig" %}
+{% endblock %}
+
+{% block content_top %}
+  <div class="region-content-top-wrapper">
+    <div class="container">
+      {% include "components/box-service.twig" %}
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="page-contnt-wrappre">
+    {% include "components/block-product-sale.twig" %}
+  </div>
+{% endblock %}
+
+{% block content_bottom %}
+  <div class="region-content-bottom-wrapper">
+    <div class="container">
+      {% include "components/box-cta-book.twig" %}
+    </div>
+  </div>
+{% endblock %}
+
+
+{% block footer %}
+ {% include "components/footer.twig" %}
+{% endblock %}

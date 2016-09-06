@@ -1,0 +1,22 @@
+// STYLES-MAIN.SCSS
+
+// Please centralize all includes here.
+
+// WARNING: DO NOT EDIT /assets/css/styles.css file manually, this should be generated only by compiler based on this file.
+
+
+// Base
+@import 'base/color';
+@import 'base/fonts';
+@import 'base/typography';
+@import 'base/button';
+
+// Components
+@import 'components/demo';
+@import 'components/header';
+@import 'components/feature';
+@import 'components/footer';
+@import 'components/box-service';
+@import 'components/box-product-sale';
+/* pages */
+@import 'pages/contact';

@@ -1,0 +1,102 @@
+.box-product-sale {
+  &__list {
+    display: flex;
+  }
+
+  &_item {
+    width: 25%;
+    position: relative;
+
+    &:before {
+      content: "";
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0,0.4);
+      position: absolute;
+    }
+
+    &.active {
+      &:before {
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,0);
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      &:before {
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,0);
+      }
+    }
+  }
+
+  &__image {
+    line-height: 0;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 0;
+    letter-spacing: 5px;
+    word-spacing: 0px;
+  }
+
+  &__description {
+    font-size: 10.3px;
+    color: white;
+    font-family: 'BrandonGrotesqueMedium';
+    margin: 0 auto 10px;
+    max-width: 180px;
+    letter-spacing: 2px;
+  }
+
+  &__content {
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    left: 0;
+    width: 100%;
+    right: 0;
+  }
+
+  &__from {
+    width: 88px;
+    height: 88px;
+    background: red;
+    color: white;
+    vertical-align: middle;
+    align-self: center;
+    display: inline-block;
+    border-radius: 200px;
+
+    .text {
+      font-size: 11px;
+      font-family: 'BrandonGrotesqueMedium';
+      text-transform: uppercase;
+      margin-top: 15px;
+    }
+
+    .number {
+      font-size: 45px;
+      font-family: 'BrandonGrotesqueBold';
+      line-height: 1;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{% extends "includes/layout.twig" %}
+
+{% block header %}
+  {% include "components/header.twig" %}
+{% endblock %}
+
+{% block content %}
+  <div class="page-contnt-wrappre">
+    <div class="container">
+      <div class="page-title">
+        <h1>CONTACT US</h1>
+        <div class="sub-title">SHORT COMMENT LINE</div>
+      </div>
+      <div class="main-page-content">
+        <div class="main-content-left">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo diam et neque pellentesque, id tempor metus condimentum. In tincidunt magna sed eleifend posu- ere. Curabitur ornare ligula nec magna bibendum, id euis-mod arcu fringilla. Duis sed ante vel est sodales pulvinar. Etiam efficitur nulla sed lectus sollicitudin, eget dapibus sem placerat. Integer augue mi, sollicitudin ac tempus quis, mattis ut magna. Morbi efficitur luctus leo viverra tristique. Etiam elit elit, tincidunt vitae cursus ut, euismod nec metus. Donec pharetra maximus eleifend. Donec interdum arcu at orci auctorincidunt vitae cursus ut, euismod nec metus. Donec ph sagittis neque sodales. Cras malesuada diam ut accumsan.
+          </p>
+          <div class="content-bottom-contact">THE<a href="">GLOSS  CARTEL</a>team</div>
+        </div>
+        <div class="main-content-right">
+          {% include "components/box-contact-form.twig" %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+
+
+{% block footer %}
+ {% include "components/footer.twig" %}
+{% endblock %}

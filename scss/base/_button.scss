@@ -1,0 +1,17 @@
+/* style button */
+.button-default {
+  background: $blue-light;
+  border-radius: 3px;
+  border: medium none;
+  color: $white;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1;
+  padding: 11px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button-default:hover {
+  background: $blue;
+}

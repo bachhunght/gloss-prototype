@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="A demo of how to use gulp-twig" />
+  <meta name="author" content="Simon de Turck" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inline Styleguide -</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script type="text/javascript" src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header class="header-wrapper">
+      <div class="container">
+        <div class="header-content">
+          <div class="site-logo">
+            <img class="site-logo__image" src="images/GC-Logo.png" alt="log ymca">
+          </div>
+          <div class="main-nav">
+            <ul class="nav">
+              <li><a class="active" href="#">GLOSS MENU</a> 
+              </li>
+              <li><a href="#">PACKAGES</a> 
+              </li>
+              <li><a href="#">LOGIN</a> 
+              </li>
+              <li><a href="#">BOOK</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+    <div class="page-contnt-wrappre">
+      <div class="container">
+        <div class="page-title">
+          <h1>FREQUENTLY ASKED QUESTIONS</h1>
+          <div class="sub-title">SHORT COMMENT LINE</div>
+        </div>
+        <div class="main-page-content">
+          <div class="content-faq">
+            <ul class="tab">
+              <li>
+                <a href="#" class="tablinks active" onclick="openCity(event, 'tab1')">BLOW DRYS</a>
+              </li>
+              <li>
+                <a href="#" class="tablinks" onclick="openCity(event, 'tab12')">MAKE UP</a>
+              </li>
+              <li>
+                <a href="#" class="tablinks" onclick="openCity(event, 'tab13')">NAILS</a>
+              </li>
+              <li>
+                <a href="#" class="tablinks" onclick="openCity(event, 'tab14')">SPRAY AN</a>
+              </li>
+            </ul>
+
+            <div id="tab1" class="tabcontent active">
+              <h3>BLOW DRYS</h3>
+              <button class="accordion icon-circle-down">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT?</button>
+              <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis malesuada pharetra. Morbi semper nulla lectus, at tempor purus gravida sit amet. Suspendisse aliquam quam sodales nisl Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Praesent mattis malesuada pharetra. Morbi semper nulla lectus, at tempor purus gravida.</p>
+              </div>
+
+              <button class="accordion icon-circle-down">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT?</button>
+              <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis malesuada pharetra. Morbi semper nulla lectus,</p>
+              </div>
+
+              <button class="accordion icon-circle-down">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT?</button>
+              <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis malesuada pharetra. Morbi semper nulla lectus, at tempor purus gravida sit amet. Suspendisse aliquam quam sodales nisl Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Praesent mattis malesuada pharetra. Morbi semper nulla lectus, at tempor purus gravida.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis malesuada pharetra. Morbi semper nulla lectus, at tempor purus gravida
+                  sit amet. Suspendisse aliquam quam sodales nisl Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis malesuada pharetra. Morbi semper nulla lectus, at tempor purus gravida.</p>
+              </div>
+              <button class="accordion icon-circle-down">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT?</button>
+              <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis malesuada pharetra. Morbi semper nulla lectus, at tempor purus gravida sit amet. Suspendisse aliquam quam sodales nisl Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Praesent mattis malesuada pharetra. Morbi semper nulla lectus, at tempor purus gravida.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis malesuada pharetra. Morbi semper nulla lectus, at tempor purus gravida
+                  sit amet. Suspendisse aliquam quam sodales nisl Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis malesuada pharetra. Morbi semper nulla lectus, at tempor purus gravida.</p>
+              </div>
+            </div>
+
+            <div id="tab12" class="tabcontent">
+              <h3>Paris</h3>
+              <p>Paris is the capital of France.</p>
+            </div>
+
+            <div id="tab13" class="tabcontent">
+              <h3>Tokyo</h3>
+              <p>Tokyo is the capital of Japan.</p>
+            </div>
+            <div id="tab14" class="tabcontent">
+              <h3>Tokyo</h3>
+              <p>Tokyo is the capital of Japan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <footer id="animate-1" class="footer-wrapper ">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-item">
+            <div class="box-footer-menu">
+              <ul class="menu-footer">
+                <li><a class="active" href="#">CONTACT</a> 
+                </li>
+                <li><a href="#">FAQ</a> 
+                </li>
+                <li><a href="#">PRIVACY</a> 
+                </li>
+                <li><a href="#">TERMS</a> 
+                </li>
+              </ul>
+            </div>
+            <div class="buttom-footer">
+              <a href="#" class="btn btn_yello">WE’RE HIRING</a>
+            </div>
+          </div>
+
+          <div class="footer-item">
+            <div class="block-copyright">
+              <div class="copyright-content">GLOSS CARTEL PTY LTD 2016. ALL RIGHTS RESERVED.</div>
+            </div>
+            <div class="box-social">
+              <div class="box-social__list">
+                <div class="box-social__item">
+                  <a href=""><span class="icon-facebook2"></span></a>
+                </div>
+                <div class="box-social__item">
+                  <a href=""><span class="icon-twitter"></span></a>
+                </div>
+                <div class="box-social__item">
+                  <a href=""><span class="icon-instagram"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script type="text/javascript">
+    SyntaxHighlighter.all()
+  </script>
+
+  <script type="text/javascript" src='js/script.js'></script>
+</body>
+
+</html>

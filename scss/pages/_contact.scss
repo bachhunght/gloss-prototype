@@ -1,0 +1,46 @@
+.main-page-content {
+  display: flex;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+.main-content-left {
+  width: 50%;
+  float: left;
+  border-right: 1px solid $gray-6975;
+  padding-right: 50px;
+  font-size: 20px;
+}
+.main-content-right {
+  width: 50%;
+  float: left;
+  padding-left: 50px;
+}
+.page-title {
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  h1 {
+    font-size: 30px;
+    color: $yello;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}
+.sub-title {
+  font-size: 20px;
+  line-height: 1;
+}
+.content-bottom-contact {
+  text-transform: uppercase;
+  font-size: 25px;
+  padding-top: 25px;
+
+  a {
+    color: $red;
+    font-size: 26px;
+    font-family: 'BrandonGrotesqueLight';
+    margin: 0 20px;
+
+  }
+}

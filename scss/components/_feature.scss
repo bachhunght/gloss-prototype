@@ -1,0 +1,54 @@
+.box-feature {
+  position: relative;
+
+  &__iamge {
+    line-height: 0;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__heightline {
+    position: absolute;
+    top: 380px;
+    right: 50px;
+    font-family: 'BrandonGrotesqueLight';
+
+    &__top {
+      color: $yello;
+      font-size: 22.55px;
+      margin: 0;
+    }
+
+    &__bottom {
+      color: $red;
+      font-size: 41.87px;
+      margin: 0;
+    }
+  }
+
+  .scrol-bottom {
+    position: absolute;
+    bottom: 54px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    color: $grey;
+    font-size: 14px;
+    font-family: 'BrandonGrotesqueMedium';
+    .text {
+      margin-bottom: 5px;
+      letter-spacing: 3px;
+      word-spacing: 5px;
+    }
+
+    a {
+      background-image: url("../images/image-demo/Arrow-copy.png");
+      font-size: 0;
+      width: 34px;
+      height: 19px;
+      color: transparent;
+      display: inline-block;
+    }
+  }
+}

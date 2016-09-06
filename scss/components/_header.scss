@@ -1,0 +1,35 @@
+
+.header-wrapper {
+  position: absolute;
+  top: 27px;
+  width: 100%;
+  z-index: 2;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav {
+  font-family: 'Conv_Glober Thin Free';
+  font-weight: 700;
+  font-size: 15px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      float: left;
+      list-style: none;
+      padding: 10px 28px;
+      a {
+        color: $grey;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}
