@@ -1,0 +1,65 @@
+.box-dry {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 33.333%;
+    position: relative;
+
+    &:before {
+      background-image: url(../images/bg-grid-list.png);
+      content: "";
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+      width: 100%;
+      height: 222px;
+    }
+  }
+
+  &__image {
+    line-height: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-family: 'BrandonGrotesqueRegular';
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__subtitle {
+    font-family: 'BrandonGrotesqueMedium';
+    font-size: 10.3px;
+  }
+
+  &__content {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 26px;
+
+  }
+
+  &__price {
+    font-family: 'BrandonGrotesqueBold';
+    font-size: 30px;
+    border-bottom: 1px solid #fff;
+    width: 70px;
+    display: inline-block;
+    padding-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  &__date {
+    font-family: 'BrandonGrotesqueMedium';
+    font-size: 10.3px;
+  }
+}
+

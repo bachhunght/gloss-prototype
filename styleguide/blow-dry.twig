@@ -6,12 +6,7 @@
 
 {% block content %}
   <div class="page-contnt-wrappre">
-    <div class="box-product-sale">
-      <div class="box-product-sale__list">
-        {% include "components/box-blow-dry.twig" with {'pathimg': 'images/image-demo/image1.png', 'title': 'hunght'} %}
-        {% include "components/box-blow-dry.twig" with {'pathimg': 'images/image-demo/image1.png'} %}
-      </div>
-    </div>
+    {% include "components/box-blow-dry.twig" %}
   </div>
 {% endblock %}
 

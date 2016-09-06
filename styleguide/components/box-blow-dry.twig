@@ -1,16 +1,64 @@
 
-<div class="box-product-sale_item active">
-  <div class="box-product-sale__image">
-    <img src="{{pathimg}}" alt="">
-  </div>
-  <div class="box-product-sale__content">
-    <h2 class="box-product-sale__title">{{title}}</h2>
-    <div class="box-product-sale__description">
-      CURRENTLY AVAILABLE IN THE EASTERN SUBURBS
-    </div>
-    <div class="box-product-sale__from">
-      <div class="text">from</div>
-      <div class="number">$55</div>
-    </div>
-  </div>
+{% set items = [
+  {
+    'img':'images/image-demo/dry1.png',
+    'box_dry_title': 'THE SUPER BASE',
+    'box_dry_subtitle': 'SUPER STRAIGHT SUPER COOL',
+    'box_dry_price': '$55',
+    'box_dry_date': '45MIN'
+  },
+  {
+    'img':'images/image-demo/dry12.png',
+    'box_dry_title': 'LOVE SEEKER',
+    'box_dry_subtitle': 'TURN HEADS WITH THIS SEXY HAIR',
+    'box_dry_price': '$55',
+    'box_dry_date': '45MIN'
+  },
+  {
+    'img':'images/image-demo/dry13.png',
+    'box_dry_title': 'THE TEMPTRESS',
+    'box_dry_subtitle': 'SOPHISTICATED VOLUME BLOW DRY',
+    'box_dry_price': '$55',
+    'box_dry_date': '45MIN'
+  }
+]
+%}
+{% block block_grid_content %}
+<div class="box-dry__list">
+    {% for item in items %}
+      <div class="box-dry__item">
+        {% if item.img is not empty %}
+          <div class="box-dry__image">
+            <a href="#"><img src="{{ item.img }}" width="" height="" /></a>
+          </div>
+        {% endif %}
+        <div class="box-dry__content">
+          {% if item.box_dry_title is not empty %}
+            <div class="box-dry__title">
+              {{ item.box_dry_title }}
+            </div>
+          {% endif %}
+          {% if item.box_dry_subtitle is not empty %}
+            <div class="box-dry__subtitle">
+              {{ item.box_dry_subtitle }}
+            </div>
+          {% endif %}
+          <div class="box-dry__group-price-date">
+            {% if item.box_dry_price is not empty %}
+              <div class="box-dry__price">
+                {{ item.box_dry_price }}
+              </div>
+            {% endif %}
+            {% if item.box_dry_date is not empty %}
+              <div class="box-dry__date">
+                {{ item.box_dry_date }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
 </div>
+
+{% endblock %}
+
