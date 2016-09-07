@@ -5,7 +5,8 @@
     'box_dry_title': 'THE SUPER BASE',
     'box_dry_subtitle': 'SUPER STRAIGHT SUPER COOL',
     'box_dry_price': '$55',
-    'box_dry_date': '45MIN'
+    'box_dry_date': '45MIN',
+    'active': 'active'
   },
   {
     'img':'images/image-demo/dry12.png',
@@ -26,7 +27,7 @@
 {% block block_grid_content %}
 <div class="box-dry__list">
     {% for item in items %}
-      <div class="box-dry__item">
+      <div class="box-dry__item {{item.active}}">
         {% if item.img is not empty %}
           <div class="box-dry__image">
             <a href="#"><img src="{{ item.img }}" width="" height="" /></a>
