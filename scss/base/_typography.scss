@@ -128,9 +128,16 @@ a {
   background: $grey;
   color: $white;
 }
-
+.form-title {
+  font-size: 30px;
+  font-family: 'BrandonGrotesqueRegular';
+  text-transform: uppercase;
+  color: $yello;
+  font-weight: normal;
+}
 /* style form */
-.box-from-contact {
+.box-from-contact, form {
+  background: $grey;
   .input {
     background: transparent;
     border-color: $gray-6975;

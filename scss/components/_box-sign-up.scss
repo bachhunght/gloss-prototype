@@ -1,0 +1,31 @@
+.box-sign-up {
+  width: 70%;
+  position: absolute;
+  background: $grey;
+  left: 0;
+  margin: 0 auto;
+  top: 175px;
+  right: 0;
+
+  &__content {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 50%;
+    padding: 20px 50px;
+  }
+
+  .box-sign-up__item:first-child {
+    border-right: 1px solid $gray-6975;
+  }
+  .box-from-sign-up__address {
+    margin-bottom: 30px;
+  }
+  .botton {
+    background: $black-1;
+    width: 100%;
+  }
+}

@@ -1,0 +1,21 @@
+{% set body_class = 'sign-up-page' %}
+{% extends "includes/layout.twig" %}
+
+{% block header %}
+  {% include "components/header.twig" %}
+{% endblock %}
+{% block feature_banner %}
+  {% include "components/box-bg-img.twig" %}
+{% endblock %}
+{% block content %}
+  <div class="box-sign-up">
+    <div class="box-sign-up__content">
+      <div class="box-sign-up__item">{% include "components/form-login.twig" %}</div>
+      <div class="box-sign-up__item">{% include "components/form-sign-up.twig" %}</div>
+     </div>
+   </div>
+{% endblock %}
+
+{% block footer %}
+ {% include "components/footer.twig" %}
+{% endblock %}
