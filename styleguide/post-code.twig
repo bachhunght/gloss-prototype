@@ -1,0 +1,17 @@
+{% set body_class = 'login-page login-no-sevice-page' %}
+{% extends "includes/layout.twig" %}
+
+{% block header %}
+  {% include "components/header.twig" %}
+{% endblock %}
+{% block feature_banner %}
+  {% include "components/box-bg-img.twig" %}
+{% endblock %}
+{% block content %}
+   {% include "components/form-post-code.twig" %}
+{% endblock %}
+
+
+{% block footer %}
+ {% include "components/footer.twig" %}
+{% endblock %}

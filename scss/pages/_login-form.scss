@@ -1,0 +1,124 @@
+.login-page {
+  padding-top: 0;
+
+  .header-wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    display: inline-block;
+    background: rgba(255,255,255,0.8);
+    height: 80px;
+    padding-top: 20px;
+  }
+
+  .main-nav {
+    display: none;
+  }
+}
+
+
+.box-form-login {
+  @extend .box-from-contact;
+  background: $grey;
+  width: 490px;
+  position: absolute;
+  top: 175px;
+  left: 50%;
+  margin-left: -245px;
+  padding: 20px 50px;
+
+  &__title {
+    font-size: 30px;
+    font-family: 'BrandonGrotesqueRegular';
+    text-transform: uppercase;
+    color: $yello;
+    font-weight: normal;
+    margin-bottom: 80px;
+  }
+  .form-pass {
+    margin-bottom: 110px;
+  }
+  .form-submit .button {
+    width: 100%;
+    background: $black-1;
+  }
+  .box-form-login__forgot {
+    text-align: center;
+    color: $white1;
+    a {
+      color: $white1;
+    }
+  }
+}
+
+.box-form-login-no-sevice {
+  width: 825px;
+  margin-left: -412px;
+
+  form {
+    width: 410px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .form-submit .button {
+    width: auto;
+  }
+  .text-hieghtlight {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+
+    a {
+      color: $red;
+      font-size: 26px;
+    }
+  }
+  input::-webkit-input-placeholder {
+    color: $yello;
+  }
+
+  input:-moz-placeholder { /* Firefox 18- */
+    color: $yello;
+  }
+
+  input::-moz-placeholder {  /* Firefox 19+ */
+    color: $yello;
+  }
+
+  input:-ms-input-placeholder {
+    color: $yello;
+  }
+  .form-text {
+    margin-bottom: 20px;
+
+    input {
+      font-family: 'BrandonGrotesqueBold';
+      color: $yello;
+      text-align: center;
+    }
+  }
+
+  .masseger p {
+    margin-bottom: 0;
+    line-height: 1.2;
+  }
+}
+
+.login-no-sevice-page {
+  .box-feature__iamge {
+    position: relative;
+
+    &:before {
+      content: "";
+      background: $white;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      opacity: 0.6;
+    }
+  }
+}
