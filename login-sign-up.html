@@ -13,7 +13,7 @@
   <script type="text/javascript" src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
 </head>
 
-<body class="login-page login-no-sevice-page">
+<body class="sign-up-page">
   <div class="page-wrapper">
     <header class="header-wrapper">
       <div class="container">
@@ -45,23 +45,52 @@
     </div>
 
 
+    <div class="box-sign-up">
+      <div class="box-sign-up__content">
+        <div class="box-sign-up__item">
+          <div class="box-form-login">
+            <h2 class="box-form-login__title form-title">log in</h2>
+            <form name="loginform" id="loginform" action="" method="post">
 
-    <div class="box-form-login box-form-login-no-sevice">
-      <form name="loginform" id="loginform" action="" method="post">
-        <div class="masseger">
-          <p>Apologies we currently do not service your location.</p>
-          <p>Please enter your email below & we will contact you as soon as we launch in your area.</p>
+              <div class="form-text">
+                <input type="text" placeholder="Email Address" name="log" id="user_login" class="input" value="" size="20">
+              </div>
+
+              <div class="form-pass">
+                <input type="password" placeholder="password" name="pwd" id="user_pass" class="input" value="" size="20">
+              </div>
+
+              <div class="form-submit">
+                <input type="submit" name="wp-submit" id="wp-submit" class="button botton button-primary button-large" value="Log In">
+              </div>
+
+              <div class="box-form-login__forgot">
+                <a href="lostpassword">Forgot your password?</a>
+              </div>
+            </form>
+          </div>
         </div>
-        <div class="text-hieghtlight">
-          the <a href="">GLOSS  CARTEL</a> term
+        <div class="box-sign-up__item">
+          <form novalidate="novalidate" class="box-from-sign-up" method="post" action="">
+            <h2 class="form-title">SIGN UP</h2>
+            <div class="box-from-contact__first-name">
+              <input type="text" placeholder="First Name" class="input" size="40" value="" name="your-name">
+            </div>
+            <div class="box-from-sign-up__last-name">
+              <input type="text" placeholder="Last Name" class="input" size="40" value="" name="your-name">
+            </div>
+            <div class="box-from-sign-up__mail-address">
+              <input type="email" placeholder="Email Address" class="input" size="40" value="" name="your-email">
+            </div>
+            <div class="box-from-sign-up__address">
+              <input type="text" placeholder="Address" class="input" size="40" value="" name="your-name">
+            </div>
+            <div class="box-from-sign-up__button">
+              <input type="submit" class="botton wpcf7-submit" value="SIGN UP">
+            </div>
+          </form>
         </div>
-        <div class="form-text">
-          <input type="text" placeholder="Email Address" name="log" id="user_login" class="input" value="" size="20">
-        </div>
-        <div class="form-submit">
-          <input type="submit" name="wp-submit" id="wp-submit" class="button botton button-primary button-large" value="SUBMIT">
-        </div>
-      </form>
+      </div>
     </div>
 
 

@@ -1,0 +1,39 @@
+{% set body_class = 'sign-up-page confim-components' %}
+{% extends "includes/layout.twig" %}
+
+{% block header %}
+  {% include "components/header.twig" %}
+  {% include "components/menu-myaccount.twig" %}
+{% endblock %}
+{% block feature_banner %}
+  {% include "components/box-bg-img.twig" %}
+{% endblock %}
+
+{% block content %}
+ <div class="box-thank-you">
+   <h1 class="page-title">THANK YOU FOR YOUR ORDER</h1>
+   <div class="box-thank-you__content">
+     <p>Have a minute? Help us share the love! Follow us on Twitter and like us on Facebook to keep youup to date with all our news and announcements!</p>
+
+    <div class="box-social">
+      <div class="box-social__list">
+        <div class="box-social__item">
+            <a href=""><span class="icon-facebook2"></span></a>
+        </div>
+        <div class="box-social__item">
+            <a href=""><span class="icon-twitter"></span></a>
+        </div>
+        <div class="box-social__item">
+            <a href=""><span class="icon-instagram"></span></a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="bottom-content-thank-you">TEXT HERE ABOUT HAIR TIPS BEFORE STYLIST ARRIVES</div>
+
+ </div>
+{% endblock %}
+
+{% block footer %}
+ {% include "components/footer.twig" %}
+{% endblock %}

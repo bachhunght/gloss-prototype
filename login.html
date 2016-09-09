@@ -13,7 +13,7 @@
   <script type="text/javascript" src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
 </head>
 
-<body class="login-page login-no-sevice-page">
+<body class="login-page">
   <div class="page-wrapper">
     <header class="header-wrapper">
       <div class="container">
@@ -46,20 +46,24 @@
 
 
 
-    <div class="box-form-login box-form-login-no-sevice">
+    <div class="box-form-login">
+      <h2 class="box-form-login__title form-title">log in</h2>
       <form name="loginform" id="loginform" action="" method="post">
-        <div class="masseger">
-          <p>Apologies we currently do not service your location.</p>
-          <p>Please enter your email below & we will contact you as soon as we launch in your area.</p>
-        </div>
-        <div class="text-hieghtlight">
-          the <a href="">GLOSS  CARTEL</a> term
-        </div>
+
         <div class="form-text">
           <input type="text" placeholder="Email Address" name="log" id="user_login" class="input" value="" size="20">
         </div>
+
+        <div class="form-pass">
+          <input type="password" placeholder="password" name="pwd" id="user_pass" class="input" value="" size="20">
+        </div>
+
         <div class="form-submit">
-          <input type="submit" name="wp-submit" id="wp-submit" class="button botton button-primary button-large" value="SUBMIT">
+          <input type="submit" name="wp-submit" id="wp-submit" class="button botton button-primary button-large" value="Log In">
+        </div>
+
+        <div class="box-form-login__forgot">
+          <a href="lostpassword">Forgot your password?</a>
         </div>
       </form>
     </div>

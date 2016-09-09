@@ -1,4 +1,4 @@
-{% set body_class = 'login-page' %}
+{% set body_class = 'login-page login-no-sevice-page' %}
 {% extends "includes/layout.twig" %}
 
 {% block header %}
@@ -8,10 +8,12 @@
   {% include "components/box-bg-img.twig" %}
 {% endblock %}
 {% block content %}
-   {% include "components/form-login.twig" %}
+  <div id="calendar"></div>
 {% endblock %}
 
 
 {% block footer %}
  {% include "components/footer.twig" %}
 {% endblock %}
+
+

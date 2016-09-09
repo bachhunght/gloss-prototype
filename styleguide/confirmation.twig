@@ -1,0 +1,39 @@
+{% set body_class = 'sign-up-page' %}
+{% extends "includes/layout.twig" %}
+
+{% block header %}
+  {% include "components/header.twig" %}
+{% endblock %}
+{% block feature_banner %}
+  {% include "components/box-bg-img.twig" %}
+{% endblock %}
+
+{% block content %}
+  <div class="main-appointment">
+    <h2 class="box-title">CHANGE/CANCEL  APPOINTMENT</h2>
+    <div class="main-appointment__content">
+      <div class="appointment__content__item">{% include "components/appointment.twig" %}</div>
+      <div class="appointment__content__item">
+
+        <form action="">
+          <div class="form-amount">
+            <div class="title">AMOUNT DUE</div>
+            <div class="price">$55</div>
+          </div>
+          <div class="checkbox-field">
+          <input type="checkbox" name="vehicle" value="Bike">
+          <div class="checkbox-field-text">
+            <div class="lable">Please tick to confirm you have read our </div>
+            <div class="sublable">terms and conditions</div>
+          </div>
+          </div>
+          <div class="appointment__reschedule"><a class="botton" href="">PAY VIA PAYPAL</a></div>
+        </form>
+      </div>
+    </div>
+   </div>
+{% endblock %}
+
+{% block footer %}
+ {% include "components/footer.twig" %}
+{% endblock %}

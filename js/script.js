@@ -43,3 +43,21 @@ for (i = 0; i < acc.length; i++) {
         this.nextElementSibling.classList.toggle("show");
     }
 }
+$(document).ready(function () {
+  $('#calendar').datepicker({
+    inline: true,
+    firstDay: 1,
+    showOtherMonths: true,
+    dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+  });
+
+  $( ".ui-state-highlight" ).after( '<div class="date-times"><div class="date-times-content"><div class="time">9:00am</div><div class="time">10:00am</div><div class="time">11:00am</div><div class="time">12:00am</div><div class="time active">2:00pm</div><div class="time">4:00pm</div><div class="time">5:00pm</div><div class="time">6:00pm</div></div></div>' );
+  $('.ui-datepicker-calendar').
+  $( ".ui-state-highlight" ).click(function() {
+    if ($(this).next().hasClass('date-times')) {
+      $(this).addClass('ok');
+      $(this).next().addClass('ok');
+    }
+    $(this).next().addClass('oktotes');
+  });
+});
