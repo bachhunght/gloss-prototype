@@ -13,7 +13,7 @@
   <script type="text/javascript" src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
 </head>
 
-<body class="login-page login-no-sevice-page">
+<body class="login-page">
   <div class="page-wrapper">
     <header class="header-wrapper">
       <div class="container">
@@ -36,6 +36,21 @@
           </div>
         </div>
 
+        <div class="box-menu-myaccount">
+          <ul class="menu-myaccount">
+            <li><a href="">GRETCHEN</a>
+              <ul>
+                <li><a href="">LOG OUT</a>
+                </li>
+                <li><a href="">MY ACCOUNT</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="picture-user">
+            <img src="images/myaccount.png">
+          </div>
+        </div>
       </div>
     </header>
     <div class="box-gb">
@@ -45,23 +60,38 @@
     </div>
 
 
-
-    <div class="box-form-login box-form-login-no-sevice">
-      <form name="loginform" id="loginform" action="" method="post">
-        <div class="masseger">
-          <p>Apologies we currently do not service your location.</p>
-          <p>Please enter your email below & we will contact you as soon as we launch in your area.</p>
+    <div class="myaccount-main-content">
+      <h2 class="page-title">MY ACCOUNT</h2>
+      <div class="my-account-content">
+        <div class="my-account__item">
+          <div class="box-upcoming">
+            <h2 class="box-upcoming__title">UPCOMING APPOINTMENTS</h2>
+            <div class="box-upcoming__list">
+              <div class="box-upcoming__item active">
+                <div class="box-upcoming__date">July 8th, 10:00am</div>
+                <div class="box-upcoming__style">Style 1</div>
+                <div class="box-upcoming__address">15 Eurimbla Ave, Randwick, 2031</div>
+              </div>
+              <div class="box-upcoming__item">
+                <div class="box-upcoming__date">July 8th, 10:00am</div>
+                <div class="box-upcoming__style">Style 2</div>
+                <div class="box-upcoming__address">15 Eurimbla Ave, Randwick, 2031</div>
+              </div>
+              <div class="box-upcoming__item">
+                <div class="box-upcoming__date">July 8th, 10:00am</div>
+                <div class="box-upcoming__style">Style 3</div>
+                <div class="box-upcoming__address">15 Eurimbla Ave, Randwick, 2031</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="text-hieghtlight">
-          the <a href="">GLOSS  CARTEL</a> term
+        <div class="my-account__item">
+          <div class="my-account__passs"><a class="botton" href="">CHANGE PASSWORD</a>
+          </div>
+          <div class="my-account__logout"><a class="botton" href="">LOG OUT</a>
+          </div>
         </div>
-        <div class="form-text">
-          <input type="text" placeholder="Email Address" name="log" id="user_login" class="input" value="" size="20">
-        </div>
-        <div class="form-submit">
-          <input type="submit" name="wp-submit" id="wp-submit" class="button botton button-primary button-large" value="SUBMIT">
-        </div>
-      </form>
+      </div>
     </div>
 
 

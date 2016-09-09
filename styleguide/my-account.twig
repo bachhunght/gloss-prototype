@@ -1,0 +1,27 @@
+{% set body_class = 'login-page' %}
+{% extends "includes/layout.twig" %}
+
+{% block header %}
+  {% include "components/header.twig" %}
+  {% include "components/menu-myaccount.twig" %}
+{% endblock %}
+{% block feature_banner %}
+  {% include "components/box-bg-img.twig" %}
+{% endblock %}
+{% block content %}
+  <div class="myaccount-main-content">
+    <h2 class="page-title">MY ACCOUNT</h2>
+    <div class="my-account-content">
+      <div class="my-account__item">
+        {% include "components/box-upcoming.twig" %}
+      </div>
+      <div class="my-account__item">
+        <div class="my-account__passs"><a class="botton" href="">CHANGE PASSWORD</a></div>
+        <div class="my-account__logout"><a class="botton" href="">LOG OUT</a></div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+{% block footer %}
+ {% include "components/footer.twig" %}
+{% endblock %}
