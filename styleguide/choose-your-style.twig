@@ -1,0 +1,22 @@
+{% set body_class = 'sign-up-page choose-service-page' %}
+{% extends "includes/layout.twig" %}
+
+{% block header %}
+  {% include "components/header.twig" %}
+  {% include "components/menu-myaccount.twig" %}
+{% endblock %}
+{% block content %}
+  <div class="page-content-wrappre">
+    <div class="main-container">
+      <div class="service-content-top">
+        <div class="box-title">2 / 4    CHOOSE YOUR STYLE</div>
+        <div class="text">OWN STYLE</div>
+      </div>
+      {% include "components/box-blow-dry.twig" %}
+    </div>
+  </div>
+{% endblock %}
+
+{% block footer %}
+ {% include "components/footer.twig" %}
+{% endblock %}

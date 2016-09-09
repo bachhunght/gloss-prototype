@@ -184,3 +184,134 @@
     color: $red;
   }
 }
+
+
+.main-page-content-paskege {
+  width: 70%;
+  background: #404352;
+  margin: 113px auto;
+  padding: 45px;
+
+  .panel.show {
+    padding-right: 0;
+  }
+  h3 {
+    font-size: 30px;
+    color: $yello;
+    font-weight: normal;
+  }
+
+  form {
+    display: flex;
+    color: white;
+
+    > div {
+      border-right: 1px solid $gray-6975;
+    }
+
+    .text-field {
+      width: 50%;
+    }
+    .field-price {
+      width: 15%;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      .price {
+        width: 88px;
+        height: 88px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        border-radius: 100%;
+        font-size: 30px;
+        background: red;
+        font-weight: bold;
+      }
+    }
+    .field-saving {
+      width: 15%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      font-weight: bold;
+      .saving {
+        font-size: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 1;
+      }
+
+      .sale {
+        font-size: 45px;
+      }
+    }
+    .appointment__purchase {
+      width: 20%;
+      text-align: center;
+      padding-top: 20px;
+      border-right: 0;
+    }
+    .botton {
+      padding: 10px 27px;
+      background: $black-1;
+      font-size: 15px;
+
+      &:hover {
+        background: $red;
+      }
+    }
+  }
+}
+.paskege-page {
+  .page-wrapper {
+    position: relative;
+    padding-top: 80px;
+  }
+  .box-feature__iamge img {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    right: 0;
+  }
+
+}
+
+
+.choose-service-page {
+
+  .page-content-wrappre {
+    padding-top: 130px;
+    padding-bottom: 120px;
+    background-image: url("../images/bg-login.png");
+    background-size: 100% 100%;
+    background-position: 0 0;
+
+    .main-container {
+      width: 70%;
+      margin: 0 auto;
+      background: $grey;
+    }
+  }
+  .service-content-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 45px;
+    color: $white;
+
+    .botton {
+      font-size: 15px;
+      padding: 10px 30px;
+      margin: 0;
+    }
+    .box-title {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}

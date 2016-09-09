@@ -1,0 +1,81 @@
+{% set body_class = 'sign-up-page paskege-page' %}
+{% extends "includes/layout.twig" %}
+
+{% block header %}
+  {% include "components/header.twig" %}
+  {% include "components/menu-myaccount.twig" %}
+{% endblock %}
+{% block feature_banner %}
+  {% include "components/box-bg-img.twig" %}
+{% endblock %}
+{% block content %}
+      <div class="main-page-content-paskege">
+        <div class="box-title">1 / 3     CHOOSE YOUR PACKAGE</div>
+        <div class="content-paskage">
+          <h3>BLOW DRYS</h3>
+          <div class="box-accondion">
+          <button class="accordion icon-circle-down active">BLOW DRY 4 FOR 5</button>
+          <div class="panel show">
+            <form action="">
+              <div class="text-field"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis malesuada pharetra. Morbi semper nulla lectus, at tempor purus gravida sit amet. Suspendisse aliquam quam sodales nisl </p></div>
+              <div class="field-price">
+                <div class="price">$255</div>
+              </div>
+              <div class="field-saving">
+                <div class="saving"><div class="sale">$55</div><div class="saving">saving</div></div>
+              </div>
+              <div class="appointment__purchase"><a class="botton" href="">PURCHASE</a></div>
+            </form>
+          </div>
+          <button class="accordion icon-circle-down active">BLOW DRY 4 FOR 5</button>
+          <div class="panel show">
+            <form action="">
+              <div class="text-field"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis malesuada pharetra. Morbi semper nulla lectus, at tempor purus gravida sit amet. Suspendisse aliquam quam sodales nisl </p></div>
+              <div class="field-price">
+                <div class="price">$255</div>
+              </div>
+              <div class="field-saving">
+                <div class="saving"><div class="sale">$55</div><div class="saving">saving</div></div>
+              </div>
+              <div class="appointment__purchase"><a class="botton" href="">PURCHASE</a></div>
+            </form>
+          </div>
+
+          <h3>MAKE UP</h3>
+          <button class="accordion icon-circle-down">MAKE UP 4 FOR 5</button>
+          <div class="panel">
+            <form action="">
+              <div class="text-field"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis malesuada pharetra. Morbi semper nulla lectus, at tempor purus gravida sit amet. Suspendisse aliquam quam sodales nisl </p></div>
+              <div class="field-price">
+                <div class="price">$55</div>
+              </div>
+              <div class="field-saving">
+                <div class="saving"><div class="sale">$55</div><div class="saving">saving</div></div>
+              </div>
+              <div class="appointment__purchase"><a class="botton" href="">PURCHASE</a></div>
+            </form>
+          </div>
+
+          <button class="accordion icon-circle-down">MAKE UP 4 FOR 5</button>
+          <div class="panel">
+            <form action="">
+              <div class="text-field"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis malesuada pharetra. Morbi semper nulla lectus, at tempor purus gravida sit amet. Suspendisse aliquam quam sodales nisl </p></div>
+              <div class="field-price">
+                <div class="price">$55</div>
+              </div>
+              <div class="field-saving">
+                <div class="saving"><div class="sale">$55</div><div class="saving">saving</div></div>
+              </div>
+              <div class="appointment__purchase"><a class="botton" href="">PURCHASE</a></div>
+            </form>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block footer %}
+ {% include "components/footer.twig" %}
+{% endblock %}
