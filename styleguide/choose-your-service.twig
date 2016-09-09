@@ -1,0 +1,22 @@
+{% set body_class = 'sign-up-page choose-service-page' %}
+{% extends "includes/layout.twig" %}
+
+{% block header %}
+  {% include "components/header.twig" %}
+  {% include "components/menu-myaccount.twig" %}
+{% endblock %}
+{% block content %}
+  <div class="page-content-wrappre">
+    <div class="main-container">
+      <div class="service-content-top">
+        <div class="box-title">1 / 4     CHOOSE YOUR SERVICE</div>
+        <a class="botton" href="">PACKAGES</a>
+      </div>
+      {% include "components/block-product-sale.twig" %}
+    </div>
+  </div>
+{% endblock %}
+
+{% block footer %}
+ {% include "components/footer.twig" %}
+{% endblock %}
