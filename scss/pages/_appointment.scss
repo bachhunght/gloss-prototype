@@ -1,0 +1,186 @@
+.main-appointment {
+  background: $grey;
+  left: 0;
+  margin: 0 auto;
+  padding: 20px 45px;
+  position: absolute;
+  right: 0;
+  top: 175px;
+  width: 70%;
+
+  a.botton {
+    width: 100%;
+    margin-bottom: 30px;
+    background: $black-1;
+    text-align: center;
+
+    &:hover {
+      background: $red;
+    }
+  }
+}
+
+.main-appointment__content {
+  display: flex;
+  margin: 0 -45px;
+  align-items: center;
+}
+
+.appointment__content__item {
+  width: 50%;
+  padding: 0 45px;
+}
+
+.appointment__content__item:first-child {
+  border-right: 1px solid $gray-6975;
+}
+
+.box-title {
+  color: $yello;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 15px 0 40px 0;
+  padding: 0;
+  word-spacing: 10px;
+}
+
+.box-appointment {
+  text-align: center;
+
+  .box-appointment__item {
+    margin-bottom: 40px;
+  }
+  .box-appointment__title {
+    color: $yello;
+    font-size: 25px;
+    margin-bottom: 13px;
+  }
+
+  .box-appointment__address {
+    font-size: 20px;
+    color: $white;
+  }
+}
+.confim-components {
+
+  .box-gb {
+    position: relative;
+
+    &:before {
+      content: "";
+      background: #fff;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      top: 0;
+      bottom: 0;
+      opacity: 0.6;
+      right: 0;
+      left: 0;
+    }
+  }
+}
+
+.box-popup {
+  width: 500px;
+  background: #404352;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  right: 0;
+  margin: 0 auto;
+  top: 50%;
+  margin-top: 20px;
+  color: white;
+  padding: 30px;
+  z-index: 9;
+}
+
+.box-popup-content p {
+  font-size: 25px;
+}
+
+.box-thank-you {
+  background: $grey;
+  width: 70%;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 175px;
+  z-index: 9;
+  text-align: center;
+  color: white;
+  padding: 45px;
+
+  .page-title {
+    font-size: 30px;
+    color: $yello;
+    font-weight: normal;
+    border-bottom: 1px solid$gray-6975;
+    margin: 0 0 30px 0;
+    padding: 0 0 30px 0;
+  }
+  .box-thank-you__content {
+    padding-top: 5px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid $gray-6975;
+    margin-bottom: 40px;
+  }
+
+  .box-thank-you__content p {
+    font-size: 20px;
+  }
+  .box-social__list {
+    justify-content: center;
+
+    a {
+      display: inline-block;
+      background: $gray-6975;
+      color: $grey;
+
+      &:hover {
+        color: $white;
+        background: $yello;
+      }
+    }
+  }
+
+  .bottom-content-thank-you {
+    font-size: 25px;
+  }
+}
+
+.form-amount {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid $gray-6975;
+  border-bottom: 1px solid $gray-6975;
+
+  .title {
+    font-size: 25px;
+    color: $yello;
+  }
+  .price {
+    font-size: 25px;
+    color: $white;
+  }
+}
+
+.checkbox-field {
+  padding: 20px 0;
+  margin-bottom: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $gray-6975;
+
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+  .sublable {
+    color: $red;
+  }
+}
