@@ -6,6 +6,7 @@
   &_list {
       display: inline-block;
       width: 100%;
+      padding: 0;
   }
 
   &__title {
@@ -21,10 +22,17 @@
 
   &__item {
     list-style-type: none;
-    width: 25%;
+    width: 100%;
     position: relative;
     float: left;
     padding-top: 65px;
+     @media screen and (min-width: 480px) {
+      width: 50%;
+    }
+
+     @media screen and (min-width: 768px) {
+      width: 25%;
+    }
 
     &__title {
       font-size: 14px;

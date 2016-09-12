@@ -7,11 +7,17 @@
 .footer-inner {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer-item {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 845px) {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
 }
 
 .box-footer-menu {
@@ -71,6 +77,7 @@
       background: $yello;
       color: white;
       font-size: 16px;
+      display: block;
     }
   }
 }
@@ -78,4 +85,8 @@
 .block-copyright {
   font-size: 10px;
   color: $yello;
+}
+
+.hidden {
+  display: none;
 }

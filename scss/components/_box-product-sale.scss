@@ -1,11 +1,19 @@
 .box-product-sale {
   &__list {
     display: flex;
+    flex-wrap: wrap;
   }
 
   &_item {
-    width: 25%;
+    width: 100%;
     position: relative;
+
+    @media screen and (min-width: 480px) {
+      width: 50%;
+    }
+    @media screen and (min-width: 768px) {
+      width: 25%;
+    }
 
     &:before {
       content: "";

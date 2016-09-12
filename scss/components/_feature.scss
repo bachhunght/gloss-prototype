@@ -10,20 +10,37 @@
 
   &__heightline {
     position: absolute;
-    top: 380px;
+    top: auto;
+    bottom: 50%;
     right: 50px;
     font-family: 'BrandonGrotesqueLight';
 
+    @media screen and (max-width: 480px) {
+      bottom: 120px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      top: 380px;
+      bottom: auto;
+    }
+
     &__top {
       color: $yello;
-      font-size: 22.55px;
+      font-size: 16px;
       margin: 0;
+      @media screen and (min-width: 1200px) {
+        font-size: 22.55px;
+      }
     }
 
     &__bottom {
       color: $red;
-      font-size: 41.87px;
+      font-size: 25px;
       margin: 0;
+
+      @media screen and (min-width: 1200px) {
+        font-size: 41.87px;
+      }
     }
   }
 
