@@ -46,11 +46,7 @@ a {
   color: $blue-light;
 }
 
-.region-content-top-wrapper {
-  background-color: $grey;
-  display: inline-block;
-  width: 100%;
-}
+
 
 .cl-yellow {
   color: $yello;
@@ -96,6 +92,13 @@ a {
 }
 
 /* box-cta-book */
+.box-cta {
+  background-color: $grey;
+  display: inline-block;
+  width: 100%;
+  padding: 45px 0;
+
+}
 .box-cta-book {
   color: $white;
   font-size: 25px;

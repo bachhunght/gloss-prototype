@@ -9,24 +9,16 @@
 {% endblock %}
 
 {% block content_top %}
-  <div class="region-content-top-wrapper">
-    <div class="container">
-      {% include "components/box-service.twig" %}
-    </div>
-  </div>
+  {% include "components/box-service.twig" %}
+
 {% endblock %}
 
 {% block content %}
-  <div class="page-contnt-wrappre">
-    {% include "components/block-product-sale.twig" %}
-  </div>
+  {% include "components/block-product-sale.twig" %}
 {% endblock %}
 
 {% block content_bottom %}
-  <div class="region-content-bottom-wrapper">
-    <div class="container">
-      {% include "components/box-cta-book.twig" %}
-    </div>
+    {% include "components/box-cta-book.twig" %}
   </div>
 {% endblock %}
 
