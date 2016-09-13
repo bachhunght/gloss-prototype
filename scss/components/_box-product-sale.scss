@@ -15,37 +15,25 @@
       width: 25%;
     }
 
-    &:before {
-      content: "";
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: rgba(0,0,0,0.4);
-      position: absolute;
-    }
-
-    &.active {
-      &:before {
-        content: "";
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgba(0,0,0,0);
-      }
-    }
-
-    &:hover {
+    a {
       cursor: pointer;
 
       &:before {
         content: "";
         top: 0;
         bottom: 0;
+        position: absolute;
         left: 0;
         right: 0;
-        background: rgba(0,0,0,0);
+        background: rgba(0,0,0,0.4);
+      }
+    }
+
+    &:hover {
+      a {
+        &:before {
+          background: rgba(0,0,0,0);
+        }
       }
     }
   }
@@ -59,11 +47,16 @@
 
   &__title {
     font-size: 20px;
-    color: #fff;
+    color: $white;
     font-weight: normal;
     margin-bottom: 0;
     letter-spacing: 5px;
     word-spacing: 0px;
+    text-transform: uppercase;
+
+    a {
+      color: $white;
+    }
   }
 
   &__description {
