@@ -21,11 +21,25 @@
     'box_dry_subtitle': 'SOPHISTICATED VOLUME BLOW DRY',
     'box_dry_price': '$55',
     'box_dry_date': '45MIN'
+  },
+  {
+    'img':'images/image-demo/dry12.png',
+    'box_dry_title': 'THE TEMPTRESS',
+    'box_dry_subtitle': 'SOPHISTICATED VOLUME BLOW DRY',
+    'box_dry_price': '$55',
+    'box_dry_date': '45MIN'
+  },
+  {
+    'img':'images/image-demo/dry1.png',
+    'box_dry_title': 'THE TEMPTRESS',
+    'box_dry_subtitle': 'SOPHISTICATED VOLUME BLOW DRY',
+    'box_dry_price': '$55',
+    'box_dry_date': '45MIN'
   }
 ]
 %}
 {% block block_grid_content %}
-<div class="box-dry__list">
+<div class="box-dry__list slick-caroseo">
     {% for item in items %}
       <div class="box-dry__item {{item.active}}">
         {% if item.img is not empty %}

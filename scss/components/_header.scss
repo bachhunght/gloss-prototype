@@ -33,6 +33,30 @@
       &:last-child {
         padding-right: 0;
       }
+      ul.nav-drop {
+        position: absolute;
+        width: 200px;
+        background: $red;
+        display: none;
+        padding: 10px 0;
+
+        li {
+          float: none;
+
+          a {
+            color: $white;
+            &:hover {
+              color: $grey;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        ul.nav-drop {
+          display: block;
+        }
+      }
     }
   }
 }
