@@ -365,3 +365,43 @@ ul.tab li:first-child a {
   margin-top: 6px;
   font-size: 17px;
 }
+
+/* style control */
+button.slick-prev.slick-arrow,
+button.slick-next.slick-arrow {
+  position: absolute;
+  top: 50%;
+  background-color: transparent;
+  color: transparent;
+  font-size: 0;
+  width: 18px;
+  height: 34px;
+  border: none;
+  margin-top: -18px;
+  outline: 0;
+  cursor: pointer;
+  z-index: 9;
+
+  &:hover {
+    opacity: .6;
+  }
+}
+button.slick-next.slick-arrow {
+  right: -50px;
+  background-image: url("../images/icon-row.png");
+}
+
+button.slick-prev.slick-arrow {
+  left: -50px;
+  background-image: url("../images/icon-row1.png");
+}
+
+.blow-dry-page {
+  button.slick-next.slick-arrow {
+    right: 20px;
+  }
+
+  button.slick-prev.slick-arrow {
+    left: 20px;
+  }
+}
