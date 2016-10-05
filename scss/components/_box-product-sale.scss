@@ -46,13 +46,19 @@
   }
 
   &__title {
-    font-size: 20px;
-    color: $white;
-    font-weight: normal;
-    margin-bottom: 0;
-    letter-spacing: 5px;
-    word-spacing: 0px;
-    text-transform: uppercase;
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: normal;
+  margin-bottom: 0;
+  position: absolute;
+  letter-spacing: 5px;
+  word-spacing: 0px;
+  text-transform: uppercase;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 
     a {
       color: $white;
@@ -70,7 +76,7 @@
 
   &__content {
     position: absolute;
-    bottom: 30px;
+    bottom: 50px;
     text-align: center;
     left: 0;
     width: 100%;
@@ -78,26 +84,19 @@
   }
 
   &__from {
-    width: 88px;
-    height: 88px;
-    background: red;
-    color: white;
-    vertical-align: middle;
-    align-self: center;
-    display: inline-block;
-    border-radius: 200px;
-
     .text {
-      font-size: 11px;
+      font-size: 14px;
       font-family: 'BrandonGrotesqueMedium';
       text-transform: uppercase;
       margin-top: 15px;
+      color: #ff4040;
     }
 
     .number {
-      font-size: 45px;
+      font-size: 70px;
       font-family: 'BrandonGrotesqueBold';
       line-height: 1;
+      color: #fff;
     }
   }
 }

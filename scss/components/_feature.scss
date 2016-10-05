@@ -3,8 +3,13 @@
 
   &__iamge {
     line-height: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
     img {
       width: 100%;
+      opacity: 0;
     }
   }
 
@@ -13,7 +18,9 @@
     top: auto;
     bottom: 50%;
     right: 50px;
-    font-family: 'BrandonGrotesqueLight';
+    font-family: 'brandon_grotesquelight';
+    max-width: 370px;
+
 
     @media screen and (max-width: 480px) {
       bottom: 120px;
@@ -25,18 +32,21 @@
     }
 
     &__top {
-      color: $yello;
-      font-size: 16px;
+      color: #ff4040;
+      font-size: 20px;
       margin: 0;
+      font-weight: normal;
       @media screen and (min-width: 1200px) {
-        font-size: 22.55px;
+        font-size: 55px;
       }
     }
 
     &__bottom {
-      color: $red;
+      color: #404352;
       font-size: 25px;
       margin: 0;
+      font-weight: normal;
+      text-align: center;
 
       @media screen and (min-width: 1200px) {
         font-size: 41.87px;

@@ -95,3 +95,19 @@
          url('../fonts/BrandonGrotesqueBold.ttf') format('truetype'),
          url('../fonts/BrandonGrotesqueBold.svg#BrandonGrotesqueBold') format('svg');
 }
+@font-face {
+    font-family: 'brandon_grotesquelight';
+    src: url('../fonts/brandongrotesque-light-webfont.woff2') format('woff2'),
+         url('../fonts/brandongrotesque-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'brandon_grotesquethin';
+    src: url('../fonts/brandongrotesque-thin-webfont.woff2') format('woff2'),
+         url('../fonts/brandongrotesque-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
