@@ -179,6 +179,7 @@ div#cboxWrapper:before {
 
 div#cboxContent {
   position: relative;
+  z-index: 99999;
 }
 button#cboxClose {
   position: absolute;
