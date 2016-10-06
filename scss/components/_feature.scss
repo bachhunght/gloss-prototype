@@ -20,6 +20,7 @@
     right: 50px;
     font-family: 'brandon_grotesquelight';
     max-width: 370px;
+    transform: translateY(50%);
 
 
     @media screen and (max-width: 480px) {
@@ -27,8 +28,8 @@
     }
 
     @media screen and (min-width: 1200px) {
-      top: 380px;
-      bottom: auto;
+      // top: 380px;
+      // bottom: auto;
     }
 
     &__top {
@@ -36,6 +37,7 @@
       font-size: 20px;
       margin: 0;
       font-weight: normal;
+      line-height: 50px;
       @media screen and (min-width: 1200px) {
         font-size: 55px;
       }
@@ -44,12 +46,34 @@
     &__bottom {
       color: #404352;
       font-size: 25px;
-      margin: 0;
+      margin: 0 0 15px;
       font-weight: normal;
       text-align: center;
+      position: relative;
 
       @media screen and (min-width: 1200px) {
-        font-size: 41.87px;
+        font-size: 35px;
+      }
+
+      &:after {
+        content: "";
+        height: 1px;
+        width: 30px;
+        position: absolute;
+        z-index: 9;
+        background: red;
+        top: 50%;
+        right: 0;
+      }
+      &:before {
+        content: "";
+        height: 1px;
+        width: 30px;
+        position: absolute;
+        z-index: 9;
+        background: red;
+        top: 50%;
+        left: 0;
       }
     }
   }
