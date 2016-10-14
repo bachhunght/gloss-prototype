@@ -20,10 +20,19 @@
 .my-account-content {
   display: flex;
   justify-content: center;
+    -webkit-justify-content: center;
+
   flex-wrap: wrap;
   text-align: center;
   align-items: center;
   margin: 0 -45px;
+  display: flex;
+  flex-wrap: wrap;
+  display:-webkit-flex;
+  display: -webkit-flex; /* Safari */
+  -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+  display: flex;
+  flex-wrap: wrap;
 
   .my-account__item {
     width: 50%;
@@ -82,6 +91,13 @@
   top: 0;
   right: 40px;
   align-items: center;
+      display: flex;
+    flex-wrap: wrap;
+    display:-webkit-flex;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
  .menu-myaccount {
 
   li {

@@ -3,6 +3,13 @@
   width: 100%;
   padding-top: 25px;
   padding-bottom: 50px;
+      display: flex;
+    flex-wrap: wrap;
+    display:-webkit-flex;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
 }
 .main-content-left {
   width: 50%;

@@ -21,6 +21,8 @@
     font-family: 'brandon_grotesquelight';
     max-width: 370px;
     transform: translateY(50%);
+    -ms-transform: translateY(50%); /* IE 9 */
+    -webkit-transform: translateY(50%); /* Chrome, Safari, Opera */
 
 
     @media screen and (max-width: 480px) {

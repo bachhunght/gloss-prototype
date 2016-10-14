@@ -9,16 +9,35 @@
 .footer-inner {
   display: flex;
   justify-content: space-between;
+    -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   flex-wrap: wrap;
   height: 54px;
+  display: flex;
+  flex-wrap: wrap;
+  display:-webkit-flex;
+  display: -webkit-flex; /* Safari */
+  -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-item {
   display: flex;
   align-items: center;
+  display:-webkit-flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap; /* Safari 6.1+ */
   @media screen and (max-width: 845px) {
     width: 100%;
     justify-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
     margin-bottom: 15px;
   }
 }
@@ -73,6 +92,13 @@
 .box-social {
   &__list {
     display: flex;
+     display: flex;
+    flex-wrap: wrap;
+    display:-webkit-flex;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
   }
   &__item {
     margin-left: 10px;
